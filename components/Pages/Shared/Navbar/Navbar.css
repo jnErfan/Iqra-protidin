@@ -40,11 +40,16 @@
   .navItemRes {
     display: none !important;
   }
-
+.navMargin{
+  margin-top: 115px;
+}
 }
 @media only screen and (min-width: 900px) {
   .navItemResUp {
     display: none !important;
+  }
+  .navMargin{
+    margin-top: 175px
   }
 } 
 

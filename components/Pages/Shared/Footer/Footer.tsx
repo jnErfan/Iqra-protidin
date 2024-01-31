@@ -189,7 +189,7 @@ const Footer = () => {
 
               <Box className="py-2">
                 <a
-                  href="https://j-n-erfan.web.app/"
+                  href="https://erfan-info.web.app/"
                   target="_blank"
                   rel="noreferrer"
                   style={{ textDecoration: "none" }}
@@ -201,9 +201,9 @@ const Footer = () => {
                     className="copyright"
                   >
                     <i className="far fa-copyright"></i> Developed By
-                    <p style={{ fontWeight: "bold" }} className="copyrightName">
+                    <p style={{ fontWeight: "bold", fontFamily: "'ZCOOL XiaoWei', 'sans-serif'" }} className="copyrightName">
                       {" "}
-                      J.N.Erfan
+                      ERFAN
                     </p>
                   </Typography>
                 </a>

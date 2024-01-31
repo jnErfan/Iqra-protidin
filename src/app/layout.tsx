@@ -35,7 +35,9 @@ export default function RootLayout({
         href="https://fonts.googleapis.com/css2?family=Concert+One&family=Oswald:wght@500&family=PT+Sans&family=Sora:wght@100;400&family=Teko:wght@500&display=swap"
         rel="stylesheet"
       />
-
+    <Link rel="preconnect" href="https://fonts.googleapis.com"/>
+<Link rel="preconnect" href="https://fonts.gstatic.com" />
+<Link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet"/>
       {/* <!-- Animate  --> */}
       <Link
         rel="stylesheet"

@@ -463,13 +463,13 @@ const Navbar = () => {
                       borderBottom: "2px solid #DD3333",
                       backgroundImage:
                         "linear-gradient(to bottom, #1e262cb6, #1e262cb6),url('https://i.ibb.co/sgrfrCk/bghd.jpg')",
-                      mt: "170px",
+                     
                     }
               }
               className={
                 scrollChange
                   ? "animate__animated animate__fadeInDown animate__faster"
-                  : "animate__animated animate__bounceInDown animate__faster navbarMargin"
+                  : "animate__animated animate__bounceInDown animate__faster navbarMargin navMargin"
               }
             >
               <Box className="navItemResUp">
