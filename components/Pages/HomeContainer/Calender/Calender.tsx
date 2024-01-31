@@ -1,14 +1,13 @@
 "use client"
 import { useState } from "react";
-import { CalendarPicker, LocalizationProvider } from "@mui/lab";
-import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DateCalendar } from "@mui/x-date-pickers";
+import dayjs from "dayjs";
 
 const Calender = () => {
-  const [date, setDate] = useState(new Date());
   return (
     <Box>
       <Box
@@ -33,20 +32,22 @@ const Calender = () => {
       <Box
         sx={{
           display: "flex",
-          mt:"10px",
-          mb:"10px",
+          mb:'10px',
           justifyContent: "center",
-          borderRadius: "5px",
+          backgroundColor: "#d6fff5",
           transition: "500ms",
           "&:hover": {
-            backgroundColor: "#d6fff5",
-            cursor: "pointer",
-            transform: "scale(1.01)",
+            transform: "scale(1.2)",
+            backgroundColor: "transparent",
             transition: "500ms",
           },
         }}
       >
-         <Calendar  value={date} />
+      <LocalizationProvider dateAdapter={AdapterDayjs}>
+    
+          <DateCalendar defaultValue={dayjs(new Date())} readOnly />
+
+    </LocalizationProvider>
       </Box>
     </Box>
   );
